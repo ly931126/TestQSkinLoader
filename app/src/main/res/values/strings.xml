@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestQSkinLoader</string>
+    <string name="current_apk_inside_change_skin">当前APK内换肤</string>
+</resources>
