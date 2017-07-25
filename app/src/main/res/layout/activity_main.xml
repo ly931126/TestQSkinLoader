@@ -24,4 +24,12 @@
         android:layout_centerHorizontal="true"
         android:text="@string/installed_apk_change_skin"/>
 
+    <Button
+        android:id="@+id/change_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/installed_apk_change_skin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/change_text_size"/>
+
 </RelativeLayout>

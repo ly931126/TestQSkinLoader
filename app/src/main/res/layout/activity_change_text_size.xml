@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_change_text_size"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.test.testqskinloader.ChangeTextSizeActivity">
+
+    <Button
+        android:id="@+id/text_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_huge"
+        android:text="@string/good_morning"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="@dimen/textsize"
+        skin:enable="true"/>
+
+    <Button
+        android:id="@+id/text_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_one"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/good_afternoon"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="@dimen/textsize"
+        skin:enable="true"/>
+
+
+    <Button
+        android:id="@+id/text_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_two"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_huge"
+        android:text="@string/good_evenning"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="@dimen/textsize"
+        skin:enable="true"/>
+
+</RelativeLayout>

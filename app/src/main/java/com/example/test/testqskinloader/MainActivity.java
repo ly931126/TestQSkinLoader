@@ -1,13 +1,13 @@
 package com.example.test.testqskinloader;
 
+import org.qcode.qskinloader.sample.BaseActivity;
+
+import com.example.test.testqskinloader.util.CommonMethod;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
-
-import com.example.test.testqskinloader.util.CommonMethod;
-
-import org.qcode.qskinloader.sample.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,6 +21,8 @@ public class MainActivity extends BaseActivity {
 	Button			mInstalledApkChangeSkin;
 	@BindView(R.id.activity_main)
 	RelativeLayout	mActivityMain;
+	@BindView(R.id.change_text_size)
+	Button			mChangeTextSize;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,18 +31,21 @@ public class MainActivity extends BaseActivity {
 		ButterKnife.bind(this);
 	}
 	
-	@OnClick({R.id.current_apk_inside_change_skin, R.id.installed_apk_change_skin})
+	@OnClick({R.id.current_apk_inside_change_skin, R.id.installed_apk_change_skin,R.id.change_text_size})
 	public void onClick(View view) {
 		switch (view.getId()) {
 			case R.id.current_apk_inside_change_skin :
-                CommonMethod.startAnotherActivity(this,CurrentActivity.class);
+				CommonMethod.startAnotherActivity(this, CurrentActivity.class);
+				break;
+			
+			case R.id.installed_apk_change_skin :
+				CommonMethod.startAnotherActivity(this, InstalledActivity.class);
 				break;
 
-			case R.id.installed_apk_change_skin :
-                CommonMethod.startAnotherActivity(this,InstalledActivity.class);
+			case R.id.change_text_size:
+				CommonMethod.startAnotherActivity(this,ChangeTextSizeActivity.class);
 				break;
 		}
 	}
 	
-
 }

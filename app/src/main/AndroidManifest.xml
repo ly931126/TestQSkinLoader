@@ -16,11 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
         <activity android:name=".CurrentActivity"/>
         <activity android:name=".InstalledActivity"/>
-
+        <activity android:name=".ChangeTextSizeActivity">
+        </activity>
     </application>
-
 
 </manifest>
