@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:skin="http://schemas.android.com/android/skin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/installed_apk_bg"
+              android:orientation="horizontal"
+              skin:enable="true">
+
+    <Button
+        android:id="@+id/default_skin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        skin:enable="true"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="@string/installed_apk_text_content"
+        android:textColor="@color/installed_apk_text_color"/>
+
+    <Button
+        android:id="@+id/skin_one_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        skin:enable="true"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="皮肤一"
+        android:textColor="@color/installed_apk_text_color"/>
+
+    <Button
+        android:id="@+id/skin_two_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        skin:enable="true"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="皮肤二"
+        android:textColor="@color/installed_apk_text_color"/>
+
+    <Button
+        android:id="@+id/skin_three_text"
+        skin:enable="true"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="皮肤三"
+        android:textColor="@color/installed_apk_text_color"/>
+
+    <Button
+        android:id="@+id/skin_four_text"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        skin:enable="true"
+        android:text="皮肤四"
+        android:textColor="@color/installed_apk_text_color"/>
+
+</LinearLayout>

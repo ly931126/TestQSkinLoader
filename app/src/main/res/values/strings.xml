@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TestQSkinLoader</string>
     <string name="current_apk_inside_change_skin">当前APK内换肤</string>
+    <string name="installed_apk_change_skin">已安装的apk换肤</string>
+
+    <string name="installed_apk_text_content">默认皮肤</string>
 </resources>

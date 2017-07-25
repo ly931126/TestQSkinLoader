@@ -3,8 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="image_color">#0accac</color>
-    <color name="image_color_change">#a0a0a0</color>
+
     <color name="installed_apk_text_color">#0acaca</color>
+    <color name="installed_apk_text_color_one">#adadad</color>
+    <color name="installed_apk_text_color_two">#FF4081</color>
+    <color name="installed_apk_text_color_three">#01b</color>
+    <color name="installed_apk_text_color_four">#000</color>
 
 </resources>
