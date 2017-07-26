@@ -32,4 +32,12 @@
         android:layout_centerHorizontal="true"
         android:text="@string/change_text_size"/>
 
+    <Button
+        android:id="@+id/change_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_text_size"
+        android:layout_centerHorizontal="true"
+        android:text="@string/change_lan"/>
+
 </RelativeLayout>

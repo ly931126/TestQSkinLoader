@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_change_lan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    skin:enable="true"
+    tools:context="com.example.test.testqskinloader.ChangeLanActivity">
+
+    <Button
+        android:id="@+id/chinese_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/chinese"
+        skin:enable="true"/>
+
+    <Button
+        android:id="@+id/english_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/english"
+        skin:enable="true"/>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:verticalSpacing="@dimen/margin_huge"
+        android:layout_below="@+id/chinese_btn"
+        android:numColumns="1"
+        skin:enable="true"/>
+
+</RelativeLayout>
+

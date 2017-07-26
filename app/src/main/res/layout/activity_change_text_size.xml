@@ -42,7 +42,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:layout_marginBottom="@dimen/margin_huge"
-        android:text="@string/good_evenning"
+        android:text="@string/good_evening"
         android:textColor="@android:color/holo_green_light"
         android:textSize="@dimen/textsize"
         skin:enable="true"/>

@@ -20,6 +20,8 @@
         <activity android:name=".InstalledActivity"/>
         <activity android:name=".ChangeTextSizeActivity">
         </activity>
+        <activity android:name=".ChangeLanActivity">
+        </activity>
     </application>
 
 </manifest>

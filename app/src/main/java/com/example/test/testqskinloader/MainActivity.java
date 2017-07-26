@@ -23,6 +23,8 @@ public class MainActivity extends BaseActivity {
 	RelativeLayout	mActivityMain;
 	@BindView(R.id.change_text_size)
 	Button			mChangeTextSize;
+	@BindView(R.id.change_language)
+	Button			mChangeLanguage;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,7 @@ public class MainActivity extends BaseActivity {
 		ButterKnife.bind(this);
 	}
 	
-	@OnClick({R.id.current_apk_inside_change_skin, R.id.installed_apk_change_skin,R.id.change_text_size})
+	@OnClick({R.id.current_apk_inside_change_skin, R.id.installed_apk_change_skin, R.id.change_text_size, R.id.change_language})
 	public void onClick(View view) {
 		switch (view.getId()) {
 			case R.id.current_apk_inside_change_skin :
@@ -41,9 +43,13 @@ public class MainActivity extends BaseActivity {
 			case R.id.installed_apk_change_skin :
 				CommonMethod.startAnotherActivity(this, InstalledActivity.class);
 				break;
-
-			case R.id.change_text_size:
-				CommonMethod.startAnotherActivity(this,ChangeTextSizeActivity.class);
+			
+			case R.id.change_text_size :
+				CommonMethod.startAnotherActivity(this, ChangeTextSizeActivity.class);
+				break;
+			
+			case R.id.change_language :
+				CommonMethod.startAnotherActivity(this, ChangeLanActivity.class);
 				break;
 		}
 	}
